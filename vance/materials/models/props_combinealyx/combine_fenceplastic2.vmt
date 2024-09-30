@@ -1,0 +1,30 @@
+"VertexLitGeneric"	//by JersonGaming
+{
+	$basetexture 				"models/props_combinealyx/combine_fence01a_DAO"
+	$bumpmap 				"models/props_combinealyx/combine_fence01a_N"
+	$color2						"[0.8 0.8 0.8]"
+
+	$detail						"models/props_combinealyx/combine_fence_illum_off" 
+	$detailscale				"1"
+   	$detailblendfactor 	2
+   	$detailblendmode		5
+	
+	$phong						1
+	$PhongExponentTexture		"models/props_combinealyx/green"
+	$phongboost					1
+	$phongfresnelranges			"[.15 .15 .15]"
+	$phongtint                 	"[.5 .6 .5]"
+	$phongalbedotint           	"1"
+	$phongalbedoboost         	"48"
+	$halflambert				"1"
+	
+	$rimlight					1
+	$rimlightexponent			80
+	$rimlightboost				"0.5"	
+	$rimmask					1	
+	
+	$envmap 					"env_cubemap"
+	$envmaptint					"[ .06 .06 .06 ]"
+	$envmapfresnel				"1.4"
+	$normalmapalphaenvmapmask	1
+}

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+               "$basetexture" "models/props_combineal/combine_battery_color_psd_3a7f3db3_albedo.vtf"
+               //"$translucent" 1	
+               "$bumpmap"     "models/props_combineal/combine_battery_normal_psd_f480aa31.vtf"		
+}
+
+
+
+

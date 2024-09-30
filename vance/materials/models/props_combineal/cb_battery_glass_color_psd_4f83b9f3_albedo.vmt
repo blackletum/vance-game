@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+               "$basetexture" "models/props_combineal/cb_battery_glass_color_psd_4f83b9f3_albedo.vtf"
+               //"$translucent" 1	
+               "$bumpmap"     "models/props_combineal/cb_battery_glass_ref_normal_psd_39a3dcef.vtf"		
+}
+
+
+
+

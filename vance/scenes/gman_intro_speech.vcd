@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "gman"
+{
+  channel "speech"
+  {
+    event speak "vo\Gman\GMan_Intro_1.wav"
+    {
+      time 0.013333 55.688957
+      param "vo\Gman\GMan_Intro_1.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "anims"
+  {
+    event flexanimation "head"
+    {
+      time 0.380000 2.439445
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.6681 0.4900
+          1.0638 0.4100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1306 0.4200
+          0.7750 0.5200
+          1.1694 0.2600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.4035 0.6500
+        }
+      }
+    }
+  }
+}
+
+scene_ramp
+{
+  0.6069 0.8921
+  2.1303 0.4029
+  5.8857 0.5899
+  10.0000 0.7266
+  10.3286 0.3669
+  10.9714 0.4137
+}
+scalesettings
+{
+  "CChoreoView" "88"
+  "RampTool" "122"
+  "ExpressionTool" "130"
+  "GestureTool" "100"
+  "SceneRampTool" "14"
+}
+fps 60
+snap off
+ignorePhonemes off

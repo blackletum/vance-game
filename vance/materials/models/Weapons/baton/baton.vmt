@@ -1,0 +1,21 @@
+"VertexLitPBR"
+{
+	"$baseTexture"	"models\weapons\baton/baton_diff"
+	"$bumpmap" 	"models\weapons\baton/baton_normal"
+	"$roughness"	"models/weapons/baton/baton_Rough"
+	"$metallic"	"models/weapons/baton/baton_Metal"
+	"$ao"		"models/weapons/baton/baton_AO"	
+//metal
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+//	"$envmaptint" "[.01 .01 .01]"
+//	"$envmaptint" "{ 4 7 9 }"
+	"$pbr" "1"
+	//"$alphatest" "1"
+
+
+	// Rim lighting parameters
+	"$rimlight" "1"
+	"$rimlightexponent" "35"
+	"$rimlightboost" "0.125"
+}

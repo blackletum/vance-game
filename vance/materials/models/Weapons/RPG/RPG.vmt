@@ -1,0 +1,21 @@
+"VertexLitPBR"
+{
+	"$baseTexture"	"models\Weapons\RPG\RPG_Diff"
+	"$bumpmap" 	"models\Weapons\RPG\RPG_Normal"
+	"$roughness" 	"models\Weapons\RPG\RPG_Rough"
+	"$metallic" 	"models\Weapons\RPG\RPG_Metal"
+	"$ao" 		"models\Weapons\RPG\RPG_AO"
+	"$pbr" "1"
+
+	"$blendTintByBaseAlpha"	"1"
+
+//metal
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.002 .002 .002]"
+
+
+	// Rim lighting parameters
+	"$rimlight" "1"
+	"$rimlightexponent" "35"
+	"$rimlightboost" "0.125"
+}

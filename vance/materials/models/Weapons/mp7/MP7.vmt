@@ -1,0 +1,16 @@
+"VertexLitPBR"
+{
+	"$baseTexture"	"models\weapons\mp7/mp7_diff"
+	"$bumpmap"		"models\weapons\mp7/mp7_normal"
+	"$roughness"		"models/weapons/mp7/mp7_Rough"
+	"$metallic"		"models/weapons/mp7/mp7_Metal"
+	"$ao"				"models/weapons/mp7/mp7_AO"
+	"$emissive"		"models/weapons/mp7/mp7_Emissive"
+
+	"$envmap" "env_cubemap"
+	//$normalmapalphaenvmapmask 1
+	//$envmaptint [.01 .01 .01]
+	"$pbr" "1"
+	"$alphatest" "1"
+	"$nocull" "1"
+}

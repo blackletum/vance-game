@@ -1,0 +1,24 @@
+"Refract"
+{
+ 	"Refract_DX60"
+	{
+		"$fallbackmaterial" "models/props_combine/com_shield001a_dx60"
+	}
+
+	"$model" 1
+ 	"$refractamount" ".05"
+ 	"$bluramount" "0.05"
+
+	"$scale" "[1 1]"
+ 	"$normalmap" "effects/combinedisintegrator/shield_normal"
+
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" .2
+			"texturescrollangle" 80
+		}
+}
