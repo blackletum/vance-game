@@ -1,0 +1,378 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "8215"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "84621"
+	"mapversion" "8215"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "84654"
+		side
+		{
+			"id" "31391"
+			"plane" "(-1472 256 1344) (256 256 1344) (256 -256 1344)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31392"
+			"plane" "(-1472 -256 -0.00012207) (256 -256 -0.00012207) (256 256 -0.00012207)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31393"
+			"plane" "(-1472 256 1344) (-1472 -256 1344) (-1472 -256 -0.00012207)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31394"
+			"plane" "(256 256 -0.00012207) (256 -256 -0.00012207) (256 -256 1344)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31395"
+			"plane" "(256 256 1344) (-1472 256 1344) (-1472 256 -0.00012207)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31396"
+			"plane" "(256 -256 -0.00012207) (-1472 -256 -0.00012207) (-1472 -256 1344)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 153 238"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "84622"
+	"classname" "npc_combinedropship"
+	"angles" "0 0 0"
+	"CrateType" "1"
+	"Dustoff1" "pf_Dropship_Dropoff_&i_target_1"
+	"Dustoff2" "pf_Dropship_Dropoff_&i_target_2"
+	"Dustoff3" "pf_Dropship_Dropoff_&i_target_3"
+	"GunRange" "2048"
+	"LandTarget" "pf_Dropship_Dropoff_&i_target_dropoff"
+	"NPCTemplate" "pf_Dropship_Dropoff_&i_npc_1"
+	"NPCTemplate2" "pf_Dropship_Dropoff_&i_npc_2"
+	"NPCTemplate3" "pf_Dropship_Dropoff_&i_npc_3"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2564"
+	"target" "pf_Dropship_Dropoff_&i_path_start_1"
+	"targetname" "pf_Dropship_Dropoff_&i_dropship"
+	connections
+	{
+		"OnCrateShotDownBeforeDropoff" "pf_Dropship_Dropoff_&i_relay,Trigger,,0,-1"
+		"OnFinishedDropoff" "pf_Dropship_Dropoff_&i_relay,Trigger,,0,-1"
+	}
+	"origin" "-1024 0 1024"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "84624"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "0"
+	"target" "pf_Dropship_Dropoff_&i_path_start_2"
+	"targetname" "pf_Dropship_Dropoff_&i_path_start_1"
+	connections
+	{
+		"OnPass" "pf_Dropship_Dropoff_&i_dropship,FlyToSpecificTrackViaPath,pf_Dropship_Dropoff_&i_path_start_2,0,-1"
+	}
+	"origin" "-832 0 960"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84627"
+	"classname" "npc_template_maker"
+	"angles" "0 0 0"
+	"CriterionDistance" "2"
+	"CriterionVisibility" "2"
+	"MaxLiveChildren" "1"
+	"MaxNPCCount" "1"
+	"Radius" "256"
+	"spawnflags" "0"
+	"SpawnFrequency" "-1"
+	"StartDisabled" "1"
+	"targetname" "pf_Dropship_Dropoff_&i_maker"
+	"TemplateName" "pf_Dropship_Dropoff_&i_dropship"
+	"origin" "-1088 0 1120"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "84629"
+	"classname" "npc_combine_s"
+	"additionalequipment" "weapon_smg1"
+	"angles" "0 0 0"
+	"model" "models/combine_soldier.mdl"
+	"NumGrenades" "5"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2564"
+	"targetname" "pf_Dropship_Dropoff_&i_npc_1"
+	"waitingtorappel" "No"
+	"origin" "0 -128 1"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "84631"
+	"classname" "npc_combine_s"
+	"additionalequipment" "weapon_ar2"
+	"angles" "0 0 0"
+	"model" "models/combine_soldier.mdl"
+	"NumGrenades" "5"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2564"
+	"targetname" "pf_Dropship_Dropoff_&i_npc_2"
+	"waitingtorappel" "No"
+	"origin" "-32 -128 1"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "84633"
+	"classname" "npc_combine_s"
+	"additionalequipment" "weapon_shotgun"
+	"angles" "0 0 0"
+	"model" "models/combine_soldier.mdl"
+	"NumGrenades" "5"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2564"
+	"targetname" "pf_Dropship_Dropoff_&i_npc_3"
+	"waitingtorappel" "No"
+	"origin" "-64 -128 1"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "84635"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "pf_Dropship_Dropoff_&i_target_1"
+	"origin" "160 -96 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84637"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "pf_Dropship_Dropoff_&i_target_2"
+	"origin" "160 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84639"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "pf_Dropship_Dropoff_&i_target_3"
+	"origin" "160 96 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84641"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "pf_Dropship_Dropoff_&i_target_dropoff"
+	"origin" "0 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "84643"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "0"
+	"targetname" "pf_Dropship_Dropoff_&i_path_start_2"
+	connections
+	{
+		"OnPass" "pf_Dropship_Dropoff_&i_dropship,LandTakeCrate,3,0,-1"
+	}
+	"origin" "-256 0 512"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84646"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "0"
+	"target" "pf_Dropship_Dropoff_&i_path_end_2"
+	"targetname" "pf_Dropship_Dropoff_&i_path_end_1"
+	"origin" "-256 0 768"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84649"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "0"
+	"targetname" "pf_Dropship_Dropoff_&i_path_end_2"
+	connections
+	{
+		"OnPass" "pf_Dropship_Dropoff_&i_dropship,Kill,,0,-1"
+	}
+	"origin" "-832 0 1280"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84652"
+	"classname" "logic_relay"
+	"targetname" "pf_Dropship_Dropoff_&i_relay"
+	connections
+	{
+		"OnTrigger" "pf_Dropship_Dropoff_&i_dropship,FlyToSpecificTrackViaPath,pf_Dropship_Dropoff_&i_path_end_2,0,-1"
+		"OnTrigger" "pf_Dropship_Dropoff_&i_dropship,SetGunRange,0,0,-1"
+	}
+	"origin" "64 -128 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}

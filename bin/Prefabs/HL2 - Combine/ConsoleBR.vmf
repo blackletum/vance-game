@@ -1,0 +1,620 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8372"
+	"mapversion" "247"
+	"formatversion" "100"
+	"prefab" "1"
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "8"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "13980"
+	"mapversion" "247"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	solid
+	{
+		"id" "14035"
+		side
+		{
+			"id" "5826"
+			"plane" "(-64 -32 128) (-64 32 128) (64 32 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5825"
+			"plane" "(-64 32 0) (-64 -32 0) (64 -32 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5824"
+			"plane" "(-64 -32 0) (-64 32 0) (-64 32 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5823"
+			"plane" "(64 32 0) (64 -32 0) (64 -32 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5822"
+			"plane" "(-64 32 0) (64 32 0) (64 32 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5821"
+			"plane" "(64 -32 0) (-64 -32 0) (-64 -32 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 103 196"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "13981"
+	"classname" "prop_physics"
+	"angles" "0 270 0"
+	"damagetoenablemotion" "0"
+	"Damagetype" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"inertiaScale" "1.0"
+	"massScale" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/props_combine/combine_interface001.mdl"
+	"modelscale" "1.0"
+	"physdamagescale" "0.1"
+	"pressuredelay" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawnflags" "72"
+	"targetname" "pf_ConsoleBR_&i_prop_interface"
+	connections
+	{
+		"OnPhysGunPickup" "pf_ConsoleBR_&i_relay_interface_pull,Trigger,,0,-1"
+		"OnPhysGunDrop" "pf_ConsoleBR_&i_relay_interface_pull,CancelPending,,0,-1"
+	}
+	"origin" "0 -5 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "13985"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_combine/combine_intwallunit.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-1 24 27"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "13989"
+	"classname" "prop_physics"
+	"angles" "0 270 0"
+	"damagetoenablemotion" "0"
+	"Damagetype" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"inertiaScale" "1.0"
+	"massScale" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/props_combine/combine_intmonitor003.mdl"
+	"modelscale" "1.0"
+	"physdamagescale" "0.1"
+	"pressuredelay" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawnflags" "72"
+	"targetname" "pf_ConsoleBR_&i_prop_monitor"
+	connections
+	{
+		"OnPhysGunPickup" "pf_ConsoleBR_&i_relay_monitor_pull,Trigger,,0,-1"
+		"OnPhysGunDrop" "pf_ConsoleBR_&i_relay_monitor_pull,CancelPending,,0,-1"
+	}
+	"origin" "0 22 60"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "13993"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_combine/combine_intwallunit.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-1 24 87"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "13997"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "SolidMetal.Strain"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"SourceEntityName" "pf_ConsoleBR_&i_prop_interface"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "pf_ConsoleBR_&i_sound_interface"
+	"volstart" "0"
+	"origin" "48 -24 12"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -14268]"
+	}
+}
+entity
+{
+	"id" "14000"
+	"classname" "phys_ballsocket"
+	"attach1" "pf_ConsoleBR_&i_prop_monitor"
+	"breaksound" "Breakable.Metal"
+	"spawnflags" "0"
+	"targetname" "pf_Console_&i_ballsocket_monitor"
+	"origin" "-8 18 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14002"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "pf_ConsoleBR_&i_relay_interface_pull"
+	connections
+	{
+		"OnTrigger" "pf_ConsoleBR_&i_relay_interface_break,Trigger,,1,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_sound_interface,PlaySound,,0,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_prop_interface,EnableMotion,,0,-1"
+	}
+	"origin" "48 -8 12"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14004"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"parentname" "pf_ConsoleBR_&i_prop_monitor"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_monitor"
+	"TrailLength" "1"
+	"origin" "10 16 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14006"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"parentname" "pf_ConsoleBR_&i_prop_monitor"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_monitor"
+	"TrailLength" "1"
+	"origin" "-10 16 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14008"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_monitor"
+	"TrailLength" "1"
+	"origin" "-10 22 90"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14010"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_monitor"
+	"TrailLength" "1"
+	"origin" "8 22 90"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14012"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"parentname" "pf_ConsoleBR_&i_prop_interface"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_interface"
+	"TrailLength" "1"
+	"origin" "10 21 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14014"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_interface"
+	"TrailLength" "1"
+	"origin" "8 22 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14016"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_interface"
+	"TrailLength" "1"
+	"origin" "-10 22 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14018"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"MaxDelay" "1"
+	"parentname" "pf_ConsoleBR_&i_prop_interface"
+	"spawnflags" "128"
+	"targetname" "pf_Console_&i_spark_interface"
+	"TrailLength" "1"
+	"origin" "-10 19 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14020"
+	"classname" "phys_ballsocket"
+	"attach1" "pf_ConsoleBR_&i_prop_interface"
+	"breaksound" "Breakable.Metal"
+	"spawnflags" "0"
+	"targetname" "pf_Console_&i_ballsocket_interface"
+	"origin" "-13 20 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14022"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "pf_ConsoleBR_&i_relay_interface_break"
+	connections
+	{
+		"OnTrigger" "pf_Console_&i_spark_interface,StartSpark,,0,-1"
+		"OnTrigger" "pf_Console_&i_spark_interface,StopSpark,,15,-1"
+		"OnTrigger" "pf_Console_&i_ballsocket_interface,Break,,0,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_relay_interface_pull,Disable,,0,-1"
+		"OnTrigger" "pf_Console_&i_spark_interface,AddOutput,MaxDelay 3,3,-1"
+		"OnTrigger" "pf_Console_&i_spark_interface,AddOutput,MaxDelay 5,8,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_prop_interface,Skin,1,0,-1"
+	}
+	"origin" "48 8 12"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14024"
+	"classname" "phys_ballsocket"
+	"attach1" "pf_ConsoleBR_&i_prop_monitor"
+	"breaksound" "Breakable.Metal"
+	"spawnflags" "0"
+	"targetname" "pf_Console_&i_ballsocket_monitor"
+	"origin" "10 18 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14026"
+	"classname" "phys_ballsocket"
+	"attach1" "pf_ConsoleBR_&i_prop_interface"
+	"breaksound" "Breakable.Metal"
+	"spawnflags" "0"
+	"targetname" "pf_Console_&i_ballsocket_interface"
+	"origin" "12 20 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 16000]"
+	}
+}
+entity
+{
+	"id" "14028"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "pf_ConsoleBR_&i_relay_monitor_break"
+	connections
+	{
+		"OnTrigger" "pf_Console_&i_spark_monitor,StartSpark,,0,-1"
+		"OnTrigger" "pf_Console_&i_spark_monitor,StopSpark,,15,-1"
+		"OnTrigger" "pf_Console_&i_ballsocket_monitor,Break,,0,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_relay_monitor_pull,Disable,,0,-1"
+		"OnTrigger" "pf_Console_&i_spark_monitor,AddOutput,MaxDelay 3,3,-1"
+		"OnTrigger" "pf_Console_&i_spark_monitor,AddOutput,MaxDelay 5,8,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_prop_monitor,Skin,1,0,-1"
+	}
+	"origin" "48 8 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14030"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "pf_ConsoleBR_&i_relay_monitor_pull"
+	connections
+	{
+		"OnTrigger" "pf_ConsoleBR_&i_relay_monitor_break,Trigger,,1,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_sound_monitor,PlaySound,,0,-1"
+		"OnTrigger" "pf_ConsoleBR_&i_prop_monitor,EnableMotion,,0,-1"
+	}
+	"origin" "48 -8 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14032"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "SolidMetal.Strain"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"SourceEntityName" "pf_ConsoleBR_&i_prop_monitor"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "pf_ConsoleBR_&i_sound_monitor"
+	"volstart" "0"
+	"origin" "48 -24 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -14268]"
+	}
+}

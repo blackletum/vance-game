@@ -1,0 +1,1 @@
+start hammer.exe -game e:\games\Vancegame\game\vance

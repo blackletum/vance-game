@@ -1,0 +1,198 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8849"
+	"mapversion" "10"
+	"formatversion" "100"
+	"prefab" "1"
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "64"
+}
+world
+{
+	"id" "1751"
+	"mapversion" "10"
+	"classname" "worldspawn"
+	"chaptertitlenomessage" "1"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
+	"vscriptlanguage_client" "-2"
+	solid
+	{
+		"id" "1753"
+		side
+		{
+			"id" "66"
+			"plane" "(64 -192 0) (64 -192 128) (64 192 128)"
+			vertices_plus
+			{
+				"v" "64 -192 0"
+				"v" "64 -192 128"
+				"v" "64 192 128"
+				"v" "64 192 0"
+			}
+			"material" "PROPS/CARGO_CONTAINER06"
+			"uaxis" "[0 1 0 504.998] 0.397516"
+			"vaxis" "[0 0 -1 -674] 0.376471"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "65"
+			"plane" "(-64 192 0) (-64 192 128) (-64 -192 128)"
+			vertices_plus
+			{
+				"v" "-64 192 0"
+				"v" "-64 192 128"
+				"v" "-64 -192 128"
+				"v" "-64 -192 0"
+			}
+			"material" "PROPS/CARGO_CONTAINER06"
+			"uaxis" "[0 -1 0 -518.998] 0.397516"
+			"vaxis" "[0 0 -1 -674] 0.376471"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "64"
+			"plane" "(-64 -192 128) (-64 192 128) (64 192 128)"
+			vertices_plus
+			{
+				"v" "-64 -192 128"
+				"v" "-64 192 128"
+				"v" "64 192 128"
+				"v" "64 -192 128"
+			}
+			"material" "PROPS/CARGO_CONTAINER06"
+			"uaxis" "[1 0 0 -115.207] 0.577654"
+			"vaxis" "[0 -1 0 -332] 0.581818"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "63"
+			"plane" "(-64 192 128) (-64 192 0) (64 192 0)"
+			vertices_plus
+			{
+				"v" "-64 192 128"
+				"v" "-64 192 0"
+				"v" "64 192 0"
+				"v" "64 192 128"
+			}
+			"material" "PROPS/CARGO_CONTAINER06"
+			"uaxis" "[1 0 0 233] 0.286996"
+			"vaxis" "[0 0 -1 -12] 0.277057"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "62"
+			"plane" "(64 -192 128) (64 -192 0) (-64 -192 0)"
+			vertices_plus
+			{
+				"v" "64 -192 128"
+				"v" "64 -192 0"
+				"v" "-64 -192 0"
+				"v" "-64 -192 128"
+			}
+			"material" "PROPS/CARGO_CONTAINER06"
+			"uaxis" "[-1 0 0 233] 0.286996"
+			"vaxis" "[0 0 -1 -12] 0.277057"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "61"
+			"plane" "(-64 192 0) (-64 -192 0) (64 -192 0)"
+			vertices_plus
+			{
+				"v" "-64 192 0"
+				"v" "-64 -192 0"
+				"v" "64 -192 0"
+				"v" "64 192 0"
+			}
+			"material" "PROPS/CARGO_CONTAINER06"
+			"uaxis" "[1 0 0 -349] 0.576576"
+			"vaxis" "[0 1 0 692] 0.581818"
+			"rotation" "0"
+			"lightmapscale" "8"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "247 168 0"
+			"groupid" "1752"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "1752"
+		editor
+		{
+			"color" "247 168 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "1754"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableshadows" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_wasteland/cargo_container01_bars.mdl"
+	"skin" "5"
+	"solid" "6"
+	"origin" "0 192 64"
+	editor
+	{
+		"color" "247 168 0"
+		"groupid" "1752"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "1758"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableshadows" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props_wasteland/cargo_container01_bars.mdl"
+	"skin" "5"
+	"solid" "6"
+	"origin" "0 -192 64"
+	editor
+	{
+		"color" "247 168 0"
+		"groupid" "1752"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}

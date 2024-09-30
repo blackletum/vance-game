@@ -1,0 +1,373 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "8512"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "84956"
+	"mapversion" "8512"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "84980"
+		side
+		{
+			"id" "31733"
+			"plane" "(-40 24 56) (40 24 56) (40 -32 56)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31734"
+			"plane" "(-40 -32 1.54667e-006) (40 -32 1.54667e-006) (40 24 1.54667e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31735"
+			"plane" "(-40 24 56) (-40 -32 56) (-40 -32 1.54667e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31736"
+			"plane" "(40 24 1.54667e-006) (40 -32 1.54667e-006) (40 -32 56)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31737"
+			"plane" "(40 24 56) (-40 24 56) (-40 24 1.54667e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31738"
+			"plane" "(40 -32 1.54667e-006) (-40 -32 1.54667e-006) (-40 -32 56)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 156 249"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "84981"
+		side
+		{
+			"id" "6"
+			"plane" "(-40 24 64) (40 24 64) (40 -64 64)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(-40 -64 -2.17983e-006) (40 -64 -2.17983e-006) (40 24 -2.17983e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-40 24 64) (-40 -64 64) (-40 -64 -2.17983e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "3"
+			"plane" "(40 24 -2.17983e-006) (40 -64 -2.17983e-006) (40 -64 64)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2"
+			"plane" "(40 24 64) (-40 24 64) (-40 24 -2.17983e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1"
+			"plane" "(40 -64 -2.17983e-006) (-40 -64 -2.17983e-006) (-40 -64 64)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 196 229"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "84957"
+	"classname" "env_alyxemp"
+	"angles" "0 0 0"
+	"parentname" "alyx"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_alyxemp"
+	"Type" "0"
+	"origin" "0 -24 52"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -13768]"
+	}
+}
+entity
+{
+	"id" "84960"
+	"classname" "logic_choreographed_scene"
+	"busyactor" "0"
+	"SceneFile" "scenes/episode_1/al_EMP_combconsole.vcd"
+	"target1" "pf_SS_Alyx_EMPConsole_&i_target_console"
+	"target2" "pf_SS_Alyx_EMPConsole_&i_target_pos"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_scene"
+	connections
+	{
+		"OnTrigger1" "pf_SS_Alyx_EMPConsole_&i_relay,Trigger,,0,-1"
+		"OnStart" "alyx,StartScripting,,0,-1"
+		"OnCompletion" "alyx,StopScripting,,0,-1"
+		"OnStart" "pf_SS_Alyx_EMPConsole_&i_alyxemp,SetParentAttachment,emp,2.1,-1"
+		"OnStart" "pf_SS_Alyx_EMPConsole_&i_alyxemp,SetParent,alyx,2,-1"
+	}
+	"origin" "0 -48 48"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -13268]"
+	}
+}
+entity
+{
+	"id" "84962"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_relay"
+	connections
+	{
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_alyxemp,Stop,0,1,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_alyxemp,StartCharge,.5,0,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_spark,SparkOnce,,0.5,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_sprite,ShowSprite,,1.5,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_sound,PlaySound,,1.6,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_sprite,HideSprite,,2.3,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_alyxemp,StartDischarge,,0.5,-1"
+		"OnTrigger" "pf_SS_Alyx_EMPConsole_&i_alyxemp,SetTargetEnt,pf_SS_Alyx_EMPConsole_&i_target_console,0,-1"
+	}
+	"origin" "0 -48 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -12768]"
+	}
+}
+entity
+{
+	"id" "84964"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "2"
+	"MaxDelay" "0"
+	"spawnflags" "128"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_spark"
+	"TrailLength" "1"
+	"origin" "7 -5 46.3601"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -12268]"
+	}
+}
+entity
+{
+	"id" "84966"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_target_console"
+	"origin" "7 -5 46.3601"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -11768]"
+	}
+}
+entity
+{
+	"id" "84968"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadein" "0"
+	"fadeout" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "d1_trainstation_01.combinelock_unlock"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_sound"
+	"volstart" "0"
+	"origin" "8 -5.43995 40"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -11268]"
+	}
+}
+entity
+{
+	"id" "84971"
+	"classname" "env_sprite"
+	"disablereceiveshadows" "0"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "materials/Sprites/light_glow03.vmt"
+	"renderamt" "255"
+	"rendercolor" "54 255 32"
+	"renderfx" "0"
+	"rendermode" "5"
+	"scale" ".08"
+	"spawnflags" "0"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_sprite"
+	"origin" "20 -4.43995 46.3601"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupid" "5"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -10768]"
+	}
+}
+entity
+{
+	"id" "84974"
+	"classname" "info_target"
+	"angles" "0 90 0"
+	"spawnflags" "0"
+	"targetname" "pf_SS_Alyx_EMPConsole_&i_target_pos"
+	"origin" "8 -36 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -10268]"
+	}
+}
+entity
+{
+	"id" "84976"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableshadows" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_combine/combine_interface003.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "0 -4 0"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -9768]"
+	}
+}

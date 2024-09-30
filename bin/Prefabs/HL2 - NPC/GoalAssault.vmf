@@ -1,0 +1,240 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "8354"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "85190"
+	"mapversion" "8354"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "85205"
+		side
+		{
+			"id" "31553"
+			"plane" "(-96 32 96) (96 32 96) (96 -32 96)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31554"
+			"plane" "(-96 -32 -8.39233e-006) (96 -32 -8.39233e-006) (96 32 -8.39233e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31555"
+			"plane" "(-96 32 96) (-96 -32 96) (-96 -32 -8.39233e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31556"
+			"plane" "(96 32 -8.39233e-006) (96 -32 -8.39233e-006) (96 -32 96)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31557"
+			"plane" "(96 32 96) (-96 32 96) (-96 32 -8.39233e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31558"
+			"plane" "(96 -32 -8.39233e-006) (-96 -32 -8.39233e-006) (-96 -32 96)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 255 120"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "85191"
+	"classname" "assault_assaultpoint"
+	"allowdiversion" "0"
+	"allowdiversionradius" "0"
+	"angles" "0 0 0"
+	"assaulttimeout" "3.0"
+	"assaulttolerance" "36"
+	"clearoncontact" "0"
+	"forcecrouch" "0"
+	"nevertimeout" "0"
+	"spawnflags" "0"
+	"strict" "0"
+	"targetname" "pf_GoalAssault_&i_assault_point_1"
+	"urgent" "0"
+	"origin" "64 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -6268]"
+	}
+}
+entity
+{
+	"id" "85194"
+	"classname" "assault_rallypoint"
+	"angles" "0 0 0"
+	"assaultdelay" "0"
+	"assaultpoint" "pf_GoalAssault_&i_assault_point_1"
+	"forcecrouch" "0"
+	"priority" "1"
+	"targetname" "pf_GoalAssault_&i_assault_rally"
+	"urgent" "0"
+	"origin" "0 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -6268]"
+	}
+}
+entity
+{
+	"id" "85197"
+	"classname" "ai_goal_assault"
+	"actor" "pf_GoalAssault_&i_npc"
+	"AssaultCue" "3"
+	"rallypoint" "pf_GoalAssault_&i_assault_rally"
+	"RallySelectMethod" "0"
+	"SearchType" "0"
+	"StartActive" "0"
+	"targetname" "pf_GoalAssault_&i_goal"
+	"origin" "-64 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -6268]"
+	}
+}
+entity
+{
+	"id" "85199"
+	"classname" "info_npc_spawn_destination"
+	"angles" "0 0 0"
+	"ReuseDelay" "1"
+	"targetname" "pf_GoalAssault_&i_destination"
+	"origin" "-64 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 500]"
+	}
+}
+entity
+{
+	"id" "85201"
+	"classname" "npc_template_maker"
+	"angles" "0 0 0"
+	"CriterionDistance" "2"
+	"CriterionVisibility" "2"
+	"DestinationGroup" "pf_GoalAssault_&i_destination"
+	"MaxLiveChildren" "1"
+	"MaxNPCCount" "10"
+	"MinSpawnDistance" "0"
+	"Radius" "256"
+	"spawnflags" "32"
+	"SpawnFrequency" "-1"
+	"StartDisabled" "0"
+	"TemplateName" "pf_GoalAssault_&i_npc"
+	"origin" "-64 0 48"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 500]"
+	}
+}
+entity
+{
+	"id" "85203"
+	"classname" "npc_citizen"
+	"additionalequipment" "weapon_shotgun"
+	"AlwaysTransition" "No"
+	"ammoamount" "1"
+	"ammosupply" "SMG1"
+	"angles" "0 0 0"
+	"citizentype" "3"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"DontPickupWeapons" "No"
+	"DontUseSpeechSemaphore" "0"
+	"expressiontype" "Random"
+	"GameEndAlly" "No"
+	"hintlimiting" "0"
+	"ignoreunseenenemies" "0"
+	"model" "models/humans/group01/male_01.mdl"
+	"neverleaveplayersquad" "0"
+	"notifynavfailblocked" "0"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"sleepstate" "0"
+	"spawnflags" "1312768"
+	"targetname" "pf_GoalAssault_&i_npc"
+	"wakeradius" "0"
+	"wakesquad" "0"
+	"origin" "-32 0 0"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -6768]"
+	}
+}

@@ -1,0 +1,181 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "8222"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "84764"
+	"mapversion" "8222"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "84775"
+		side
+		{
+			"id" "31391"
+			"plane" "(-1472 256 1344) (1440 256 1344) (1440 -256 1344)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31392"
+			"plane" "(-1472 -256 -0.00012207) (1440 -256 -0.00012207) (1440 256 -0.00012207)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31393"
+			"plane" "(-1472 256 1344) (-1472 -256 1344) (-1472 -256 -0.00012207)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31394"
+			"plane" "(1440 256 -0.00012207) (1440 -256 -0.00012207) (1440 -256 1344)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31395"
+			"plane" "(1440 256 1344) (-1472 256 1344) (-1472 256 -0.00012207)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31396"
+			"plane" "(1440 -256 -0.00012207) (-1472 -256 -0.00012207) (-1472 -256 1344)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 153 238"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "84765"
+	"classname" "npc_combinedropship"
+	"angles" "0 0 0"
+	"CrateType" "2"
+	"GunRange" "2048"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2564"
+	"target" "pf_Dropship_FlyPath_&i_path_1"
+	"targetname" "pf_Dropship_FlyPath_&i_dropship"
+	"origin" "-1024 0 1024"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "84767"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "0"
+	"target" "pf_Dropship_FlyPath_&i_path_2"
+	"targetname" "pf_Dropship_FlyPath_&i_path_1"
+	connections
+	{
+		"OnPass" "pf_Dropship_FlyPath_&i_dropship,FlyToSpecificTrackViaPath,pf_Dropship_FlyPath_&i_path_2,0,-1"
+	}
+	"origin" "-832 0 960"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "84770"
+	"classname" "npc_template_maker"
+	"angles" "0 0 0"
+	"CriterionDistance" "2"
+	"CriterionVisibility" "2"
+	"MaxLiveChildren" "1"
+	"MaxNPCCount" "1"
+	"Radius" "256"
+	"spawnflags" "0"
+	"SpawnFrequency" "-1"
+	"StartDisabled" "1"
+	"targetname" "pf_Dropship_FlyPath_&i_maker"
+	"TemplateName" "pf_Dropship_FlyPath_&i_dropship"
+	"origin" "-1088 0 1120"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "84772"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "0"
+	"targetname" "pf_Dropship_FlyPath_&i_path_2"
+	connections
+	{
+		"OnPass" "pf_Dropship_FlyPath_&i_dropship,Kill,,0,-1"
+	}
+	"origin" "832 0 960"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}

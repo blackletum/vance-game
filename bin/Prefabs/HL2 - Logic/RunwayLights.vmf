@@ -1,0 +1,571 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "6422"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "72180"
+	"mapversion" "6422"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "72235"
+		side
+		{
+			"id" "29610"
+			"plane" "(-288 64 64) (288 64 64) (288 -64 64)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29611"
+			"plane" "(-288 -64 -0.0002442) (288 -64 -0.0002442) (288 64 -0.0002442)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29612"
+			"plane" "(-288 64 64) (-288 -64 64) (-288 -64 -0.0002442)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29613"
+			"plane" "(288 64 -0.0002442) (288 -64 -0.0002442) (288 -64 64)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29614"
+			"plane" "(288 64 64) (-288 64 64) (-288 64 -0.0002442)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "29615"
+			"plane" "(288 -64 -0.0002442) (-288 -64 -0.0002442) (-288 -64 64)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 208 197"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "72181"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "1"
+	"targetname" "pf_RunwayLights_&i_sprite_1"
+	"origin" "-224 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72184"
+	"classname" "logic_timer"
+	"RefireTime" "0.1"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_RunwayLights_&i_timer"
+	"UseRandomTime" "0"
+	connections
+	{
+		"OnTimer" "pf_RunwayLights_&i_counter,Add,1,0,-1"
+	}
+	"origin" "-224 0 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72186"
+	"classname" "math_counter"
+	"max" "17"
+	"min" "1"
+	"startvalue" "1"
+	"targetname" "pf_RunwayLights_&i_counter"
+	connections
+	{
+		"OutValue" "pf_RunwayLights_&i_case,InValue,,0,-1"
+		"OnHitMax" "pf_RunwayLights_&i_counter,SetValue,1,0,-1"
+	}
+	"origin" "-224 32 7.99988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "72188"
+	"classname" "logic_case"
+	"Case01" "1"
+	"Case02" "2"
+	"Case03" "3"
+	"Case04" "4"
+	"Case05" "5"
+	"Case06" "6"
+	"Case07" "7"
+	"Case08" "8"
+	"Case09" "9"
+	"Case10" "10"
+	"Case11" "11"
+	"Case12" "12"
+	"Case13" "13"
+	"Case14" "14"
+	"Case15" "15"
+	"Case16" "16"
+	"targetname" "pf_RunwayLights_&i_case"
+	connections
+	{
+		"OnCase01" "pf_RunwayLights_&i_sprite_1,ToggleSprite,,0,-1"
+		"OnCase01" "pf_RunwayLights_&i_sprite_16,ToggleSprite,,0,-1"
+		"OnCase02" "pf_RunwayLights_&i_sprite_2,ToggleSprite,,0,-1"
+		"OnCase02" "pf_RunwayLights_&i_sprite_1,ToggleSprite,,0,-1"
+		"OnCase03" "pf_RunwayLights_&i_sprite_3,ToggleSprite,,0,-1"
+		"OnCase03" "pf_RunwayLights_&i_sprite_2,ToggleSprite,,0,-1"
+		"OnCase04" "pf_RunwayLights_&i_sprite_4,ToggleSprite,,0,-1"
+		"OnCase04" "pf_RunwayLights_&i_sprite_3,ToggleSprite,,0,-1"
+		"OnCase05" "pf_RunwayLights_&i_sprite_5,ToggleSprite,,0,-1"
+		"OnCase05" "pf_RunwayLights_&i_sprite_4,ToggleSprite,,0,-1"
+		"OnCase06" "pf_RunwayLights_&i_sprite_6,ToggleSprite,,0,-1"
+		"OnCase06" "pf_RunwayLights_&i_sprite_5,ToggleSprite,,0,-1"
+		"OnCase07" "pf_RunwayLights_&i_sprite_7,ToggleSprite,,0,-1"
+		"OnCase07" "pf_RunwayLights_&i_sprite_6,ToggleSprite,,0,-1"
+		"OnCase08" "pf_RunwayLights_&i_sprite_8,ToggleSprite,,0,-1"
+		"OnCase08" "pf_RunwayLights_&i_sprite_7,ToggleSprite,,0,-1"
+		"OnCase09" "pf_RunwayLights_&i_sprite_9,ToggleSprite,,0,-1"
+		"OnCase09" "pf_RunwayLights_&i_sprite_8,ToggleSprite,,0,-1"
+		"OnCase10" "pf_RunwayLights_&i_sprite_10,ToggleSprite,,0,-1"
+		"OnCase10" "pf_RunwayLights_&i_sprite_9,ToggleSprite,,0,-1"
+		"OnCase11" "pf_RunwayLights_&i_sprite_11,ToggleSprite,,0,-1"
+		"OnCase11" "pf_RunwayLights_&i_sprite_10,ToggleSprite,,0,-1"
+		"OnCase12" "pf_RunwayLights_&i_sprite_12,ToggleSprite,,0,-1"
+		"OnCase12" "pf_RunwayLights_&i_sprite_11,ToggleSprite,,0,-1"
+		"OnCase13" "pf_RunwayLights_&i_sprite_13,ToggleSprite,,0,-1"
+		"OnCase13" "pf_RunwayLights_&i_sprite_12,ToggleSprite,,0,-1"
+		"OnCase14" "pf_RunwayLights_&i_sprite_14,ToggleSprite,,0,-1"
+		"OnCase14" "pf_RunwayLights_&i_sprite_13,ToggleSprite,,0,-1"
+		"OnCase15" "pf_RunwayLights_&i_sprite_15,ToggleSprite,,0,-1"
+		"OnCase15" "pf_RunwayLights_&i_sprite_14,ToggleSprite,,0,-1"
+		"OnCase16" "pf_RunwayLights_&i_sprite_16,ToggleSprite,,0,-1"
+		"OnCase16" "pf_RunwayLights_&i_sprite_15,ToggleSprite,,0,-1"
+	}
+	"origin" "-192 32 7.99988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "72190"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_2"
+	"origin" "-192 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72193"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_3"
+	"origin" "-160 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72196"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_4"
+	"origin" "-128 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72199"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_5"
+	"origin" "-96 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72202"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_6"
+	"origin" "-64 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72205"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_7"
+	"origin" "-32 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72208"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_8"
+	"origin" "0 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72211"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_9"
+	"origin" "32 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72214"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_10"
+	"origin" "64 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72217"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_11"
+	"origin" "96 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72220"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_12"
+	"origin" "128 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72223"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_13"
+	"origin" "160 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72226"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_14"
+	"origin" "192 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72229"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_15"
+	"origin" "224 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "72232"
+	"classname" "env_sprite"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"model" "sprites/glow1.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rendermode" "9"
+	"scale" "0.5"
+	"spawnflags" "0"
+	"targetname" "pf_RunwayLights_&i_sprite_16"
+	"origin" "256 -32 8"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}

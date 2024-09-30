@@ -1,0 +1,963 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "6440"
+	"mapversion" "5260"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "72961"
+	"mapversion" "5260"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "73051"
+		side
+		{
+			"id" "6"
+			"plane" "(-64 64 2048) (64 64 2048) (64 -64 2048)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(-64 -64 0) (64 -64 0) (64 64 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(-64 64 2048) (-64 -64 2048) (-64 -64 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "3"
+			"plane" "(64 64 0) (64 -64 0) (64 -64 2048)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2"
+			"plane" "(64 64 2048) (-64 64 2048) (-64 64 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1"
+			"plane" "(64 -64 0) (-64 -64 0) (-64 -64 2048)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 201 106"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "72962"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_2"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_1"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,1,0,-1"
+	}
+	"origin" "0 0 8"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72965"
+	"classname" "func_tracktrain"
+	"bank" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"dmg" "1000"
+	"height" "0"
+	"ManualAccelSpeed" "0"
+	"ManualDecelSpeed" "0"
+	"ManualSpeedChanges" "0"
+	"MoveSound" "plats/elevator_move_loop1.wav"
+	"MoveSoundMaxPitch" "200"
+	"MoveSoundMaxTime" "0"
+	"MoveSoundMinPitch" "60"
+	"MoveSoundMinTime" "0"
+	"orientationtype" "0"
+	"origin" "0 0 8"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"spawnflags" "530"
+	"StartSound" "plats/elevator_start1.wav"
+	"startspeed" "64"
+	"StopSound" "plats/elevator_stop2.wav"
+	"target" "pf_ElevatorMultiLogic_&i_track_1"
+	"targetname" "pf_ElevatorMultiLogic_&i_tracktrain"
+	"velocitytype" "0"
+	"volume" "10"
+	"wheels" "50"
+	connections
+	{
+		"OnNext" "pf_ElevatorMultiLogic_&i_tracktrain,StartForward,,0,-1"
+	}
+	solid
+	{
+		"id" "72966"
+		side
+		{
+			"id" "7340"
+			"plane" "(-64 64 12) (64 64 12) (64 -64 12)"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7339"
+			"plane" "(-64 -64 4) (64 -64 4) (64 64 4)"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7338"
+			"plane" "(-64 64 12) (-64 -64 12) (-64 -64 4)"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7337"
+			"plane" "(64 64 4) (64 -64 4) (64 -64 12)"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7336"
+			"plane" "(64 64 12) (-64 64 12) (-64 64 4)"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7335"
+			"plane" "(64 -64 4) (-64 -64 4) (-64 -64 12)"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "72968"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_1"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_3"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_2"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,2,0,-1"
+	}
+	"origin" "0 0 136"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72971"
+	"classname" "logic_case"
+	"Case01" "1"
+	"Case02" "2"
+	"Case03" "3"
+	"Case04" "4"
+	"Case05" "5"
+	"Case06" "6"
+	"Case07" "7"
+	"Case08" "8"
+	"Case09" "9"
+	"Case10" "10"
+	"Case11" "11"
+	"Case12" "12"
+	"Case13" "13"
+	"Case14" "14"
+	"Case15" "15"
+	"Case16" "16"
+	"spawnflags" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_case"
+	connections
+	{
+		"OnCase01" "pf_ElevatorMultiLogic_&i_relay_1,Trigger,,0,-1"
+		"OnCase02" "pf_ElevatorMultiLogic_&i_relay_2,Trigger,,0,-1"
+		"OnCase04" "pf_ElevatorMultiLogic_&i_relay_4,Trigger,,0,-1"
+		"OnCase03" "pf_ElevatorMultiLogic_&i_relay_3,Trigger,,0,-1"
+		"OnCase05" "pf_ElevatorMultiLogic_&i_relay_5,Trigger,,0,-1"
+		"OnCase06" "pf_ElevatorMultiLogic_&i_relay_6,Trigger,,0,-1"
+		"OnCase07" "pf_ElevatorMultiLogic_&i_relay_7,Trigger,,0,-1"
+		"OnCase08" "pf_ElevatorMultiLogic_&i_relay_8,Trigger,,0,-1"
+		"OnCase09" "pf_ElevatorMultiLogic_&i_relay_9,Trigger,,0,-1"
+		"OnCase10" "pf_ElevatorMultiLogic_&i_relay_10,Trigger,,0,-1"
+		"OnCase11" "pf_ElevatorMultiLogic_&i_relay_11,Trigger,,0,-1"
+		"OnCase12" "pf_ElevatorMultiLogic_&i_relay_12,Trigger,,0,-1"
+		"OnCase13" "pf_ElevatorMultiLogic_&i_relay_13,Trigger,,0,-1"
+		"OnCase14" "pf_ElevatorMultiLogic_&i_relay_14,Trigger,,0,-1"
+		"OnCase15" "pf_ElevatorMultiLogic_&i_relay_15,Trigger,,0,-1"
+		"OnCase16" "pf_ElevatorMultiLogic_&i_relay_16,Trigger,,0,-1"
+	}
+	"origin" "-40 -56 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72973"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_2"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_4"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_3"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,3,0,-1"
+	}
+	"origin" "0 0 264"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72976"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_3"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_5"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_4"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,4,0,-1"
+	}
+	"origin" "0 0 392"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72979"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_4"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_6"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_5"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,5,0,-1"
+	}
+	"origin" "0 0 520"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72982"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_5"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_7"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_6"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,6,0,-1"
+	}
+	"origin" "0 0 648"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72985"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_6"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_8"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_7"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,7,0,-1"
+	}
+	"origin" "0 0 776"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72988"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_7"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_9"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_8"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,8,0,-1"
+	}
+	"origin" "0 0 904"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72991"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_8"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_10"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_9"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,9,0,-1"
+	}
+	"origin" "0 0 1032"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72994"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_9"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_11"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_10"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,10,0,-1"
+	}
+	"origin" "0 0 1160"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "72997"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_10"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_12"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_11"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,11,0,-1"
+	}
+	"origin" "0 0 1288"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73000"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_11"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_13"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_12"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,12,0,-1"
+	}
+	"origin" "0 0 1416"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73003"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_12"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_14"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_13"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,13,0,-1"
+	}
+	"origin" "0 0 1544"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73006"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_13"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_15"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_14"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,14,0,-1"
+	}
+	"origin" "0 0 1672"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73009"
+	"classname" "path_track"
+	"altpath" "pf_ElevatorMultiLogic_&i_track_14"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_16"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_15"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,15,0,-1"
+	}
+	"origin" "0 0 1800"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73012"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "pf_ElevatorMultiLogic_&i_track_15"
+	"targetname" "pf_ElevatorMultiLogic_&i_track_16"
+	connections
+	{
+		"OnPass" "pf_ElevatorMultiLogic_&i_compare,SetValueCompare,16,0,-1"
+	}
+	"origin" "0 0 1928"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73015"
+	"classname" "logic_compare"
+	"CompareValue" "1"
+	"InitialValue" "1"
+	"targetname" "pf_ElevatorMultiLogic_&i_compare"
+	connections
+	{
+		"OnEqualTo" "pf_ElevatorMultiLogic_&i_tracktrain,Stop,,0,-1"
+		"OnEqualTo" "pf_ElevatorMultiLogic_&i_case,InValue,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_2,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_3,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_4,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_5,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_6,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_7,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_8,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_9,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_10,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_11,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_12,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_13,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_14,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_15,EnableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_15,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_14,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_13,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_12,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_11,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_10,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_9,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_8,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_7,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_6,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_5,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_4,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_3,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_2,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_1,DisableAlternatePath,,0,-1"
+		"OnLessThan" "pf_ElevatorMultiLogic_&i_track_16,DisableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_16,EnableAlternatePath,,0,-1"
+		"OnGreaterThan" "pf_ElevatorMultiLogic_&i_track_1,EnableAlternatePath,,0,-1"
+		"OnNotEqualTo" "pf_ElevatorMultiLogic_&i_tracktrain,StartForward,,0,-1"
+	}
+	"origin" "-24 -32 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73017"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_1"
+	"origin" "0 0 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73019"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_2"
+	"origin" "0 0 152"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73021"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_4"
+	"origin" "0 0 408"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73023"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_3"
+	"origin" "0 0 280"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73025"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_5"
+	"origin" "0 0 536"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73027"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_6"
+	"origin" "0 0 664"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73029"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_7"
+	"origin" "0 0 792"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73031"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_8"
+	"origin" "0 0 920"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73033"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_16"
+	"origin" "0 0 1944"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73035"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_15"
+	"origin" "0 0 1816"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73037"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_14"
+	"origin" "0 0 1688"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73039"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_13"
+	"origin" "0 0 1560"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73041"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_12"
+	"origin" "0 0 1432"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73043"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_11"
+	"origin" "0 0 1304"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73045"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_10"
+	"origin" "0 0 1176"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73047"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_ElevatorMultiLogic_&i_relay_9"
+	"origin" "0 0 1048"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "73049"
+	"classname" "math_counter"
+	"max" "16"
+	"min" "1"
+	"StartDisabled" "0"
+	"startvalue" "1"
+	"targetname" "pf_ElevatorMultiLogic_&i_counter"
+	connections
+	{
+		"OutValue" "pf_ElevatorMultiLogic_&i_compare,SetCompareValue,,0,-1"
+		"OutValue" "pf_ElevatorMultiLogic_&i_compare,Compare,,0.01,-1"
+	}
+	"origin" "-56 -32 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 11000]"
+	}
+}

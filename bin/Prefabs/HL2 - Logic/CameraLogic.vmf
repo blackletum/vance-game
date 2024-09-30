@@ -1,0 +1,929 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "6440"
+	"mapversion" "5378"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "72718"
+	"mapversion" "5378"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "72805"
+		side
+		{
+			"id" "7330"
+			"plane" "(-256 128 128) (256 128 128) (256 -128 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7331"
+			"plane" "(-256 -128 -7.62939e-006) (256 -128 -7.62939e-006) (256 128 -7.62939e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7332"
+			"plane" "(-256 128 128) (-256 -128 128) (-256 -128 -7.62939e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7333"
+			"plane" "(256 128 -7.62939e-006) (256 -128 -7.62939e-006) (256 -128 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7334"
+			"plane" "(256 128 128) (-256 128 128) (-256 128 -7.62939e-006)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7335"
+			"plane" "(256 -128 -7.62939e-006) (-256 -128 -7.62939e-006) (-256 -128 128)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 231 132"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "72719"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_1"
+	"UseScreenAspectRatio" "0"
+	"origin" "-240 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72721"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_1"
+	"targetname" "pf_CameraLogic_&i_microphone_1"
+	"origin" "-240 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72724"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "pf_CameraLogic_&i_target"
+	"origin" "0 64 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 14000]"
+	}
+}
+entity
+{
+	"id" "72726"
+	"classname" "logic_case"
+	"Case01" "1"
+	"Case02" "2"
+	"Case03" "3"
+	"Case04" "4"
+	"Case05" "5"
+	"Case06" "6"
+	"Case07" "7"
+	"Case08" "8"
+	"Case09" "9"
+	"Case10" "10"
+	"Case11" "11"
+	"Case12" "12"
+	"Case13" "13"
+	"Case14" "14"
+	"Case15" "15"
+	"Case16" "16"
+	"targetname" "pf_CameraLogic_&i_case"
+	connections
+	{
+		"OnCase01" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase02" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase03" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase01" "pf_CameraLogic_&i_camera_1,SetOn,,0.01,-1"
+		"OnCase01" "pf_CameraLogic_&i_microphone_1,Enable,,0.01,-1"
+		"OnCase04" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase05" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase06" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase07" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase08" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase09" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase10" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase11" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase12" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase13" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase14" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase15" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase16" "pf_CameraLogic_&i_relay,Trigger,,0,-1"
+		"OnCase02" "pf_CameraLogic_&i_camera_2,SetOn,,0.01,-1"
+		"OnCase02" "pf_CameraLogic_&i_microphone_2,Enable,,0.01,-1"
+		"OnCase03" "pf_CameraLogic_&i_microphone_3,Enable,,0.01,-1"
+		"OnCase03" "pf_CameraLogic_&i_camera_3,SetOn,,0.01,-1"
+		"OnCase04" "pf_CameraLogic_&i_camera_4,SetOn,,0.01,-1"
+		"OnCase04" "pf_CameraLogic_&i_microphone_4,Enable,,0.01,-1"
+		"OnCase05" "pf_CameraLogic_&i_microphone_5,Enable,,0.01,-1"
+		"OnCase05" "pf_CameraLogic_&i_camera_5,SetOn,,0.01,-1"
+		"OnCase06" "pf_CameraLogic_&i_camera_6,SetOn,,0.01,-1"
+		"OnCase06" "pf_CameraLogic_&i_microphone_6,Enable,,0.01,-1"
+		"OnCase07" "pf_CameraLogic_&i_microphone_7,Enable,,0.01,-1"
+		"OnCase07" "pf_CameraLogic_&i_camera_7,SetOn,,0.01,-1"
+		"OnCase08" "pf_CameraLogic_&i_camera_8,SetOn,,0.01,-1"
+		"OnCase08" "pf_CameraLogic_&i_microphone_8,Enable,,0.01,-1"
+		"OnCase09" "pf_CameraLogic_&i_camera_9,SetOn,,0.01,-1"
+		"OnCase09" "pf_CameraLogic_&i_microphone_9,Enable,,0.01,-1"
+		"OnCase10" "pf_CameraLogic_&i_microphone_10,Enable,,0.01,-1"
+		"OnCase10" "pf_CameraLogic_&i_camera_10,SetOn,,0.01,-1"
+		"OnCase11" "pf_CameraLogic_&i_camera_11,SetOn,,0.01,-1"
+		"OnCase11" "pf_CameraLogic_&i_microphone_11,Enable,,0.01,-1"
+		"OnCase12" "pf_CameraLogic_&i_microphone_12,Enable,,0.01,-1"
+		"OnCase12" "pf_CameraLogic_&i_camera_12,SetOn,,0.01,-1"
+		"OnCase13" "pf_CameraLogic_&i_camera_13,SetOn,,0.01,-1"
+		"OnCase13" "pf_CameraLogic_&i_microphone_13,Enable,,0.01,-1"
+		"OnCase14" "pf_CameraLogic_&i_microphone_14,Enable,,0.01,-1"
+		"OnCase14" "pf_CameraLogic_&i_camera_14,SetOn,,0.01,-1"
+		"OnCase15" "pf_CameraLogic_&i_camera_15,SetOn,,0.01,-1"
+		"OnCase15" "pf_CameraLogic_&i_microphone_15,Enable,,0.01,-1"
+		"OnCase16" "pf_CameraLogic_&i_camera_16,SetOn,,0.01,-1"
+		"OnCase16" "pf_CameraLogic_&i_microphone_16,Enable,,0.01,-1"
+	}
+	"origin" "0 32 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "72728"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "pf_CameraLogic_&i_relay"
+	connections
+	{
+		"OnTrigger" "pf_CameraLogic_&i_camera_1,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_2,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_1,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_3,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_4,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_5,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_6,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_7,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_8,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_9,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_10,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_11,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_12,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_13,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_14,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_15,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_camera_16,SetOff,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_2,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_3,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_4,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_5,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_6,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_7,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_8,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_9,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_10,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_11,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_12,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_13,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_14,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_15,Disable,,0,-1"
+		"OnTrigger" "pf_CameraLogic_&i_microphone_16,Disable,,0,-1"
+	}
+	"origin" "0 48 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "72730"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_2"
+	"UseScreenAspectRatio" "0"
+	"origin" "-208 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72732"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_2"
+	"targetname" "pf_CameraLogic_&i_microphone_2"
+	"origin" "-208 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72735"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_3"
+	"UseScreenAspectRatio" "0"
+	"origin" "-176 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72737"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_3"
+	"targetname" "pf_CameraLogic_&i_microphone_3"
+	"origin" "-176 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72740"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_4"
+	"UseScreenAspectRatio" "0"
+	"origin" "-144 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72742"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_4"
+	"targetname" "pf_CameraLogic_&i_microphone_4"
+	"origin" "-144 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72745"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_5"
+	"UseScreenAspectRatio" "0"
+	"origin" "-112 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72747"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_5"
+	"targetname" "pf_CameraLogic_&i_microphone_5"
+	"origin" "-112 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72750"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_6"
+	"UseScreenAspectRatio" "0"
+	"origin" "-80 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72752"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_6"
+	"targetname" "pf_CameraLogic_&i_microphone_6"
+	"origin" "-80 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72755"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_7"
+	"UseScreenAspectRatio" "0"
+	"origin" "-48 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72757"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_7"
+	"targetname" "pf_CameraLogic_&i_microphone_7"
+	"origin" "-48 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72760"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_8"
+	"UseScreenAspectRatio" "0"
+	"origin" "-16 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72762"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_8"
+	"targetname" "pf_CameraLogic_&i_microphone_8"
+	"origin" "-16 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72765"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_9"
+	"UseScreenAspectRatio" "0"
+	"origin" "16 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72767"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_9"
+	"targetname" "pf_CameraLogic_&i_microphone_9"
+	"origin" "16 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72770"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_10"
+	"UseScreenAspectRatio" "0"
+	"origin" "48 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72772"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_10"
+	"targetname" "pf_CameraLogic_&i_microphone_10"
+	"origin" "48 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72775"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_11"
+	"UseScreenAspectRatio" "0"
+	"origin" "80 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72777"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_11"
+	"targetname" "pf_CameraLogic_&i_microphone_11"
+	"origin" "80 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72780"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_12"
+	"UseScreenAspectRatio" "0"
+	"origin" "112 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72782"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_12"
+	"targetname" "pf_CameraLogic_&i_microphone_12"
+	"origin" "112 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72785"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_13"
+	"UseScreenAspectRatio" "0"
+	"origin" "144 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72787"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_13"
+	"targetname" "pf_CameraLogic_&i_microphone_13"
+	"origin" "144 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72790"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_14"
+	"UseScreenAspectRatio" "0"
+	"origin" "176 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72792"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_14"
+	"targetname" "pf_CameraLogic_&i_microphone_14"
+	"origin" "176 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72795"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_15"
+	"UseScreenAspectRatio" "0"
+	"origin" "208 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72797"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_15"
+	"targetname" "pf_CameraLogic_&i_microphone_15"
+	"origin" "208 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}
+entity
+{
+	"id" "72800"
+	"classname" "point_camera"
+	"angles" "0 270 0"
+	"fogColor" "0 0 0"
+	"fogEnable" "0"
+	"fogEnd" "4096"
+	"fogMaxDensity" "1"
+	"fogStart" "2048"
+	"FOV" "90"
+	"spawnflags" "0"
+	"targetname" "pf_CameraLogic_&i_camera_16"
+	"UseScreenAspectRatio" "0"
+	"origin" "240 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "72802"
+	"classname" "env_microphone"
+	"MaxRange" "240"
+	"Sensitivity" "1"
+	"spawnflags" "47"
+	"speaker_dsp_preset" "50"
+	"SpeakerName" "pf_CameraLogic_&i_target"
+	"target" "pf_CameraLogic_&i_microphone_16"
+	"targetname" "pf_CameraLogic_&i_microphone_16"
+	"origin" "240 -64 64"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 13500]"
+	}
+}

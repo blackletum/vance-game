@@ -1,0 +1,195 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "8147"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "83040"
+	"mapversion" "8147"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "83050"
+		side
+		{
+			"id" "31397"
+			"plane" "(-48 48 80) (48 48 80) (48 -64 80)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31398"
+			"plane" "(-48 -64 0) (48 -64 0) (48 48 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31399"
+			"plane" "(-48 48 80) (-48 -64 80) (-48 -64 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31400"
+			"plane" "(48 48 0) (48 -64 0) (48 -64 80)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31401"
+			"plane" "(48 48 80) (-48 48 80) (-48 48 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "31402"
+			"plane" "(48 -64 0) (-48 -64 0) (-48 -64 80)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 251 204"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "83041"
+	"classname" "npc_template_maker"
+	"angles" "0 0 0"
+	"CriterionDistance" "2"
+	"CriterionVisibility" "1"
+	"DestinationGroup" "pf_Spawner_AllUnits_&i_dest"
+	"MaxLiveChildren" "-1"
+	"MaxNPCCount" "2"
+	"Radius" "256"
+	"spawnflags" "0"
+	"SpawnFrequency" "-1"
+	"StartDisabled" "1"
+	"targetname" "pf_Spawner_AllUnits_&i_maker"
+	"TemplateName" "pf_Spawner_AllUnits_&i_npc"
+	connections
+	{
+		"OnSpawnNPC" "pf_Spawner_AllUnits_&i_schedule,StartSchedule,,0,-1"
+	}
+	"origin" "-16 -32 16"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "83043"
+	"classname" "npc_zombie"
+	"angles" "0 0 0"
+	"physdamagescale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "2564"
+	"targetname" "pf_Spawner_AllUnits_&i_npc"
+	"origin" "0 0 -0.00012207"
+	editor
+	{
+		"color" "0 200 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "83045"
+	"classname" "aiscripted_schedule"
+	"forcestate" "3"
+	"goalent" "!player"
+	"graball" "1"
+	"interruptability" "2"
+	"m_iszEntity" "pf_Spawner_AllUnits_&i_npc"
+	"schedule" "3"
+	"spawnflags" "4"
+	"targetname" "pf_Spawner_AllUnits_&i_schedule"
+	"origin" "16 -32 16"
+	editor
+	{
+		"color" "255 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "83048"
+	"classname" "info_npc_spawn_destination"
+	"angles" "0 0 0"
+	"ReuseDelay" "1"
+	"targetname" "pf_Spawner_AllUnits_&i_dest"
+	"origin" "-32 32 16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "83051"
+	"classname" "info_npc_spawn_destination"
+	"angles" "0 0 0"
+	"ReuseDelay" "1"
+	"targetname" "pf_Spawner_AllUnits_&i_dest"
+	"origin" "32 32 16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}

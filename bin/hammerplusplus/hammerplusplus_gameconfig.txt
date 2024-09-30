@@ -1,0 +1,34 @@
+"Configs"
+{
+	"Games"
+	{
+		"Half-Life 2"
+		{
+			"GameDir"		"C:\Developer\vance-game\vance"
+			"Hammer"
+			{
+				"GameData0"		"C:\Developer\vance-game\bin\base.fgd"
+				"GameData1"		"C:\Developer\vance-game\bin\halflife2.fgd"
+				"GameData2"		"C:\Developer\vance-game\vance\vance.fgd"
+				"TextureFormat"		"5"
+				"MapFormat"		"4"
+				"DefaultTextureScale"		"0.250000"
+				"DefaultLightmapScale"		"16"
+				"GameExe"		"C:\Developer\vance-game\hl2.exe"
+				"DefaultSolidEntity"		"func_detail"
+				"DefaultPointEntity"		"info_player_start"
+				"BSP"		"C:\Developer\vance-game\bin\vbsp.exe"
+				"Vis"		"C:\Developer\vance-game\bin\vvis.exe"
+				"Light"		"C:\Developer\vance-game\bin\vrad.exe"
+				"GameExeDir"		"C:\Developer\vance-game"
+				"MapDir"		"C:\Developer\vance-game\vance\maps"
+				"BSPDir"		"C:\Developer\vance-game\hl2\maps"
+				"PrefabDir"		"C:\Developer\vance-game\bin\Prefabs"
+				"CordonTexture"		"tools\toolsskybox"
+				"MaterialExcludeCount"		"0"
+				"Previous"		"1"
+			}
+		}
+	}
+	"SDKVersion"		"5"
+}
